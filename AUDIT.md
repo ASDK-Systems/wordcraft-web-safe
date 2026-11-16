@@ -2,9 +2,10 @@
 
 This records what was checked in the `wordcraft-web-0.5.0.zip` release asset
 from [storytold/wordcraft](https://github.com/storytold/wordcraft) v0.5.0,
-ahead of mirroring it in this repo so VARKIS doesn't have to fetch that build
-from storytold's infrastructure at runtime. The audited copy is not attached
-to a release here yet — see README.md's Status line.
+before mirroring it in this repo's
+[v0.5.0 release](https://github.com/ASDK-Systems/wordcraft-web-safe/releases/tag/v0.5.0)
+so VARKIS doesn't have to fetch that build from storytold's infrastructure
+at runtime.
 
 ## What was checked
 
@@ -43,6 +44,7 @@ The compiled `.wasm` binary's raw string table was also scanned for any URL.
 
 ## Conclusion
 
-This release makes no outbound network calls. Nothing needs patching or
-stripping - once attached here, the file will be a byte-for-byte, unmodified
-mirror of upstream's own release asset, not a modified derivative work.
+This release makes no outbound network calls. Nothing was patched or
+stripped - the file in the v0.5.0 release is a byte-for-byte, unmodified
+mirror of upstream's own release asset (verified by re-downloading it after
+upload and comparing SHA-256), not a modified derivative work.
